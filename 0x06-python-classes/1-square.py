@@ -64,4 +64,4 @@ class Square:
         bool: True if successful, False otherwise.
         """
         if (size):
-            self.size = size
+            self.__size = size
