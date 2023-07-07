@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+'''6-rectangle: Defines Rectangle type
+'''
 class Rectangle:
+    '''It defines the Rectangle type
+    '''
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):

@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+'''9-rectangle: Defines Rectangle type
+'''
 class Rectangle:
+    '''It defines the Rectangle type
+    '''
     number_of_instances = 0
     print_symbol = "#"
 
