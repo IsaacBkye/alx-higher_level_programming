@@ -16,17 +16,8 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, attrs=None):
+    def to_json(self):
         """
-        Dictionary of a Student instance with attrs validation
+        Dictionary of a Student instance
         """
-        if (type(attrs) is list):
-            newDict = {}
-            Dict = vars(self)
-            setDict = set(Dict)
-            setList = set(attrs)
-            keys = list(setDict & setList)
-            for key in keys:
-                newDict[key] = Dict[key]
-            return (newDict)
         return vars(self)
