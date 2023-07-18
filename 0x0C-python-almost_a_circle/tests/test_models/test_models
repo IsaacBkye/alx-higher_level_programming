@@ -1,0 +1,9 @@
+  /root/alx-higher_level_programming/0x0C-python-almost_a_circle/tests/test_models:
+  total used in directory 36 available 2094580
+  drwxr-xr-x 3 root root  126 Jul 17 22:40 .
+  drwxr-xr-x 4 root root   63 Jul 17 22:15 ..
+  -rw-r--r-- 1 root root    0 Jul 17 22:11 __init__.py
+  drwxr-xr-x 2 root root  140 Jul 17 22:35 __pycache__
+  -rw-r--r-- 1 root root 5272 Jul 17 22:38 test_base.py
+  -rw-r--r-- 1 root root 9859 Jul 17 22:40 test_rectangle.py
+  -rw-r--r-- 1 root root 6189 Jul 17 22:39 test_square.py

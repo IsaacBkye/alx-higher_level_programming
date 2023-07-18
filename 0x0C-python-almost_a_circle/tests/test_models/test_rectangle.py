@@ -1,41 +1,38 @@
 #!/usr/bin/python3
-
-
-"""Module containment for all unittest cases for
-Rectangle Base class
 """
-
-
+This module contains all unittest cases for
+Base class
+"""
 import unittest
 import pep8
+from models.base import Base
+from models.rectangle import Rectangle
 import sys
 from io import StringIO
 import json
 import os
-from models.base import Base
-from models.rectangle import Rectangle
 
 
-class testRectangle(unittest.TestCase):
+class TestRectangle(unittest.TestCase):
     """
-    Class to contain functions to run
+    Class containing functions to run
     multiple tests
     """
-    def set_up(self):
+    def setUp(self):
         """
-        To redirect stdout to check
+        function to redirect stdout to check
         outpute of functions relying on print
         """
         sys.stdout = StringIO()
 
-    def tear_down(self):
+    def tearDown(self):
         """
-        For cleaning everything up after running
+        cleans everything up after running
         setup
         """
         sys.stdout = sys.__stdout__
 
-    def t_pep8_m(self):
+    def test_pep8_model(self):
         """
         Tests for pep8
         """
@@ -43,7 +40,7 @@ class testRectangle(unittest.TestCase):
         p = p8.check_files(['models/rectangle.py'])
         self.assertEqual(p.total_errors, 0, "fix pep8")
 
-    def t_pep8_t(self):
+    def test_pep8_test(self):
         """
         Tests for pep8
         """
@@ -51,7 +48,7 @@ class testRectangle(unittest.TestCase):
         p = p8.check_files(['tests/test_models/test_rectangle.py'])
         self.assertEqual(p.total_errors, 0, "fix pep8")
 
-    def t_documentation(self):
+    def test_00_documentation(self):
         """
         Test to see if documentation is
         created and correct
@@ -77,7 +74,7 @@ class testRectangle(unittest.TestCase):
         self.assertTrue(hasattr(Rectangle, "to_dictionary"))
         self.assertTrue(Rectangle.to_dictionary.__doc__)
 
-    def t_id_1(self):
+    def test_0_id(self):
         """
         Tests for id
         """
