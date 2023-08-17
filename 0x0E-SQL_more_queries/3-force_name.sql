@@ -1,0 +1,3 @@
+-- Create the table force_name onMySQL server.
+
+CREATE TABLE IF NOT EXISTS force_name (id INT, name VARCHAR(256));
